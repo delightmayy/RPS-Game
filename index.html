@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RPS-Game</title>
     <meta name="author" content="delight" />
-    <link rel="shortcut icon" href="/Rock-paper-scissors.svg.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/Rock-paper-scissors.svg.png"
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <script src="/script.js" defer></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -24,7 +31,6 @@
           display: none;
         }
       }
-     
     </style>
   </head>
   <body class="bg-dark">
@@ -33,75 +39,68 @@
     >
       rock paper scissors
     </header>
-    <section class="container-fluid  bg-dark">
-        
-        <div class="accordion " id="accordionFlush" >
-          <div class="accordion-item  bg-dark" style="border: none;">
-            <h2 class="accordion-header border rounded"  >
-              <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne ">
-                How to Play
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse show bg-dark text-light" data-bs-parent="#accordionFlush" >
-              <div class="accordion-body " >
-                <strong>In rock-paper-scissors</strong>, two players will each randomly choose one of three hand signs: rock (made by making a fist), paper (made by laying your hand flat), or scissors (made by holding out two fingers to look like scissors). Both players show their signs at the same time to see who will win. Here are the rules that determine which sign beats another:
-      
-                Rock wins over scissors (because rock smashes scissors)
-                Scissors wins over paper (because scissors cut paper)
-                Paper wins over rock (because paper covers rock)
-                (If that last one doesn't make a whole lot of sense to you...you're not alone.)
-                
-                If both players show the same sign, it's a tie. And that's basically the whole game! 
-              </div>
-            </div>
-          </div>
-          
-          </div>
-        </div>
+    <section>
+      <details class="text-light m-2 border rounded">
+        <summary class="p-3 text-capitalize h5">how to play</summary>
+        <p class="p-4">
+          <strong>In rock-paper-scissors</strong>, two players will each
+          randomly choose one of three hand signs: rock (made by making a fist),
+          paper (made by laying your hand flat), or scissors (made by holding
+          out two fingers to look like scissors). Both players show their signs
+          at the same time to see who will win. Here are the rules that
+          determine which sign beats another: Rock wins over scissors (because
+          rock smashes scissors) Scissors wins over paper (because scissors cut
+          paper) Paper wins over rock (because paper covers rock) (If that last
+          one doesn't make a whole lot of sense to you...you're not alone.) If
+          both players show the same sign, it's a tie. And that's basically the
+          whole game!
+        </p>
+      </details>
     </section>
-    <section class="container-fluid gy-4 ">
-      <div class="row rounded  p-4">
+    <!-- this is new -->
+    <section class="container-fluid gy-4">
+      <div class="row rounded p-4">
         <div class="col-md-6 my-auto">
           <div
             class="row bg-dark rounded text-capitalize text-center text-light"
           >
-            <div id="pickDisplay" class="col-md-12 mt-md-3 h3">pick an option</div>
+            <div id="pickDisplay" class="col-md-12 mt-md-3 h3">
+              pick an option
+            </div>
             <div id="scores" class="col-md-12 display-1 p-1">
-              <span class="computer"> 0 </span> : <span class="player">0</span> 
+              <span class="computer"> 0 </span> : <span class="player">0</span>
             </div>
-            <div class="computeroption  col-md-12 p-1 h6" >
-               computer option:
-            </div>
-            <div class=" winner col-md-12 p-1 h3" >
-               
-            </div>
+            <div class="computeroption col-md-12 p-1 h6">computer option:</div>
+            <div class="winner col-md-12 p-1 h3"></div>
           </div>
           <div class="row groupb text-center">
-            <div class="col pt-2  mb-md-3">
+            <div class="col pt-2 mb-md-3">
               <button
                 id="rock"
                 type="button"
                 class="btn btn-outline-warning m-1 btn-sm text-capitalize"
-              ><i class="bi bi-cloudy"></i>
+              >
+                <i class="bi bi-cloudy"></i>
                 rock
               </button>
               <button
                 id="paper"
                 type="button"
-                class="btn btn-outline-warning m-1 btn-sm text-capitalize "
-              ><i class="bi bi-file-post"></i>
+                class="btn btn-outline-warning m-1 btn-sm text-capitalize"
+              >
+                <i class="bi bi-file-post"></i>
                 paper
               </button>
               <button
                 id="scissors"
                 type="button"
-                class="btn btn-outline-warning m-1 btn-sm text-capitalize "
-              ><i class="bi bi-scissors"></i>
+                class="btn btn-outline-warning m-1 btn-sm text-capitalize"
+              >
+                <i class="bi bi-scissors"></i>
                 scissors
               </button>
             </div>
           </div>
-          
         </div>
         <div
           id="hideme"
@@ -116,14 +115,19 @@
           </div>
         </div>
       </div>
-       <div class="row ">
-        <div class=" col-sm-6 d-grid mx-auto mb-3 " >
-           <button type="button" class=" btn btn-outline-warning  text-capitalize text-light"id="quit-btn">quit</button>
+      <div class="row">
+        <div class="col-sm-6 d-grid mx-auto mb-3">
+          <button
+            type="button"
+            class="btn btn-outline-warning text-capitalize text-light"
+            id="quit-btn"
+          >
+            quit
+          </button>
         </div>
-       
       </div>
     </section>
-    
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
